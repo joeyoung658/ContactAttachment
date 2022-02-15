@@ -196,7 +196,7 @@ class Post extends \Magento\Contact\Controller\Index\Post
             $upload->setAllowRenameFiles(true);
             $upload->setFilesDispersion(true);
             $upload->setAllowCreateFolders(true);
-            $upload->setAllowedExtensions(['txt', 'csv', 'jpg', 'jpeg', 'gif', 'png', 'pdf', 'doc', 'docx']);
+            $upload->setAllowedExtensions(['jpg', 'jpeg']);
 
             $path = $this->fileSystem
                 ->getDirectoryRead(DirectoryList::MEDIA)

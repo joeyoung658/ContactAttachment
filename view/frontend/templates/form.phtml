@@ -43,9 +43,12 @@
             </div>
         </div>
         <div class="field attachment">
-            <label class="label" for="attachment"><span><?= $block->escapeHtml(__('Attachment')) ?></span></label>
+            <label class="label" for="attachment"><span><?= $block->escapeHtml(__('If you need to send us a picture of something, here is the place to upload!')) ?></span></label>
             <div class="control">
-                <input name="attachment" id="attachment" title="<?= $block->escapeHtmlAttr(__('Attachment')) ?>" value="<?= $block->escapeHtmlAttr($this->helper('Magento\Contact\Helper\Data')->getPostValue('attachment')) ?>" class="input-text" type="file"/>
+                <input name="attachment" id="attachment"
+                       title="<?= $block->escapeHtmlAttr(__('If you need to send us a picture of something, here is the place to upload!')) ?>"
+                       value="<?= $block->escapeHtmlAttr($this->helper('Magento\Contact\Helper\Data')->getPostValue('attachment')) ?>"
+                       class="input-text" type="file" accept="image/x-png,image/jpeg"/>
             </div>
         </div>
         <?= $block->getChildHtml('form.additional.info') ?>
