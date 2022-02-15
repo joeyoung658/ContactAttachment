@@ -46,7 +46,8 @@
             <label class="label" for="attachment"><span><?= $block->escapeHtml(__('If you need to send us a picture of something, here is the place to upload!')) ?></span></label>
             <div class="control">
                 <input name="attachment" id="attachment"
-                       title="<?= $block->escapeHtmlAttr(__('If you need to send us a picture of something, here is the place to upload! (Only .PNG & .JPEG Please)')) ?>"
+                       title="<?= $block->escapeHtmlAttr(__('If you need to send us a picture of something,
+                        here is the place to upload! (Only .PNG & .JPEG Please)')) ?>"
                        value="<?= $block->escapeHtmlAttr($this->helper('Magento\Contact\Helper\Data')->getPostValue('attachment')) ?>"
                        class="input-text" type="file" accept="image/x-png,image/jpeg"/>
             </div>
