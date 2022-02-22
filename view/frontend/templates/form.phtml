@@ -49,7 +49,7 @@
                        title="<?= $block->escapeHtmlAttr(__('If you need to send us a picture of something,
                         here is the place to upload! (Only .PNG & .JPEG Please)')) ?>"
                        value="<?= $block->escapeHtmlAttr($this->helper('Magento\Contact\Helper\Data')->getPostValue('attachment')) ?>"
-                       class="input-text" type="file" accept="image/x-png,image/jpeg"/>
+                       class="input-text" type="file" accept="image/x-png,image/jpeg,file/obj,file/stp"/>
             </div>
         </div>
         <?= $block->getChildHtml('form.additional.info') ?>
